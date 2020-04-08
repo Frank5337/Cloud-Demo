@@ -1,0 +1,23 @@
+server: 
+  port: 9004
+spring: 
+  application:  
+    name: tensquare-article #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.33.129:3306/tensquare_article?characterEncoding=UTF8&useSSL=false
+    username: root
+    password: root
+  jpa: 
+    database: MySQL
+    show-sql: true
+#    redis 不写端口 默认6379
+  redis:
+    host: 192.168.33.129
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+# 走线上 模块之间可以跨域访问
+  instance:
+    prefer-ip-address: true

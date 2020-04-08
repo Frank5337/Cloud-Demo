@@ -1,0 +1,21 @@
+server:
+  port: 9001
+#  必须是 - (若用) SpringCloud 才能找到
+spring:
+  application:
+    name: tensquare-base
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.33.129:3306/tensquare_base?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+  jpa:
+    database: mysql
+    show-sql: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  # 走线上 模块之间可以跨域访问
+  instance:
+    prefer-ip-address: true

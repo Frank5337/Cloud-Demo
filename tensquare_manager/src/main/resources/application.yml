@@ -1,0 +1,35 @@
+server:
+  port: 9011
+spring:
+  application:
+    name: tensquare-manager
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  # 走线上 模块之间可以跨域访问
+  instance:
+    prefer-ip-address: true
+
+zuul:
+  routes:
+    tensquare-base:
+      #要访问的路径   只要访问的路径里面有/base  自动跳到base模块里
+      path: /base/**
+      serviceId: tensquare-base
+    tensquare-user:
+      #要访问的路径   只要访问的路径里面有/base  自动跳到base模块里
+      path: /user/**
+      serviceId: tensquare-user
+    tensquare-qa:
+      #要访问的路径   只要访问的路径里面有/base  自动跳到base模块里
+      path: /qa/**
+      serviceId: tensquare-qa
+jwt:
+  config:
+    key: huatu
+    ttl: 3600000
+
+
+

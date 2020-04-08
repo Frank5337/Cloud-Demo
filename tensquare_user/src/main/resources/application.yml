@@ -1,0 +1,28 @@
+server: 
+  port: 9008
+spring: 
+  application:  
+    name: tensquare-user #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.33.129:3306/tensquare_user?characterEncoding=UTF8&useSSL=false
+    username: root
+    password: root
+  jpa:
+      database: MySQL
+      show-sql: true
+      redis:
+        host: 192.168.33.129
+      rabbitmq:
+        host: 192.168.33.129
+jwt:
+  config:
+    key: huatu
+    ttl: 3600000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  # 走线上 模块之间可以跨域访问
+  instance:
+    prefer-ip-address: true
