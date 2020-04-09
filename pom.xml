@@ -4,28 +4,28 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.tensquare</groupId>
-    <artifactId>tensquare_parent</artifactId>
+    <groupId>com.cloud_demo</groupId>
+    <artifactId>cloud_parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>tensquare_common</module>
-        <module>tensquare_base</module>
-        <module>tensquare_article</module>
-        <module>tensquare_qa</module>
-        <module>tensquare_recruit</module>
-        <module>tensquare_gathering</module>
-        <!--<module>tensquare_rabbitmqDemo</module>-->
-        <module>tensquare_user</module>
-        <module>tensquare_sms</module>
-        <module>tensquare_eureka</module>
-        <module>tensquare_friend</module>
-        <module>tensquare_manager</module>
-        <module>tensquare_web</module>
+        <module>cloud_common</module>
+        <module>cloud_base</module>
+        <module>cloud_article</module>
+        <module>cloud_qa</module>
+        <module>cloud_recruit</module>
+        <module>cloud_gathering</module>
+        <!--<module>cloud_rabbitmqDemo</module>-->
+        <module>cloud_user</module>
+        <module>cloud_sms</module>
+        <module>cloud_eureka</module>
+        <module>cloud_friend</module>
+        <module>cloud_manager</module>
+        <module>cloud_web</module>
     </modules>
     <packaging>pom</packaging>
 
-    <name>tensquare_parent</name>
-    <description>十次方项目</description>
+    <name>cloud_parent</name>
+    <description>Cloud Demo</description>
 
     <!--spring cloud 锁定版本-->
     <dependencyManagement>
