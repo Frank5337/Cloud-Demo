@@ -2,7 +2,7 @@ server:
   port: 9005
 spring: 
   application:  
-    name: tensquare-gathering #指定服务名
+    name: cloud-gathering #指定服务名
   datasource:  
     driverClassName: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.33.129:3306/tensquare_gathering?characterEncoding=UTF8&useSSL=false

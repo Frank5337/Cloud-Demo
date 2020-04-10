@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Description:
  */
 //如果调用失败 会执行BaseClientImpl
-@FeignClient(value = "tensquare-base", fallback = BaseClientImpl.class)
+@FeignClient(value = "cloud-base", fallback = BaseClientImpl.class)
 public interface BaseClient {
 
     @GetMapping("/label/{labelId}")

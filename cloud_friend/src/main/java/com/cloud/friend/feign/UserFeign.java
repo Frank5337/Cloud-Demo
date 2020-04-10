@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Date: 18:02 2019/10/26
  * @Description:
  */
-@FeignClient("tensquare-user")
+@FeignClient("cloud-user")
 @RequestMapping("/user")
 public interface UserFeign {
 

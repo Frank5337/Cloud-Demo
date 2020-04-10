@@ -3,7 +3,7 @@ server:
 #  必须是 - (若用) SpringCloud 才能找到
 spring:
   application:
-    name: tensquare-base
+    name: cloud-base
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://192.168.33.129:3306/tensquare_base?characterEncoding=utf-8&useSSL=false

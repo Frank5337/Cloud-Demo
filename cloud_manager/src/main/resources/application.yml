@@ -2,7 +2,7 @@ server:
   port: 9011
 spring:
   application:
-    name: tensquare-manager
+    name: cloud-manager
 
 eureka:
   client:
@@ -14,18 +14,18 @@ eureka:
 
 zuul:
   routes:
-    tensquare-base:
+    cloud-base:
       #要访问的路径   只要访问的路径里面有/base  自动跳到base模块里
       path: /base/**
-      serviceId: tensquare-base
-    tensquare-user:
+      serviceId: cloud-base
+    cloud-user:
       #要访问的路径   只要访问的路径里面有/base  自动跳到base模块里
       path: /user/**
-      serviceId: tensquare-user
-    tensquare-qa:
+      serviceId: cloud-user
+    cloud-qa:
       #要访问的路径   只要访问的路径里面有/base  自动跳到base模块里
       path: /qa/**
-      serviceId: tensquare-qa
+      serviceId: cloud-qa
 jwt:
   config:
     key: huatu
